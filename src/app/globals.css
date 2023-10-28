@@ -1,7 +1,9 @@
 :root {
-    --white: #f1eee3;
-    --green: 
+    --white: #f6f6f6;
+    --green: #013220;
+    --light-green: #0f402e;
 }
+@import url(https://db.onlinewebfonts.com/c/5c173ad9697fc1d8a9ef2de3fbefe3d7?family=Jane+Light+W00+Regular);
 
 @font-face {
   font-family: 'august-script';
@@ -10,6 +12,15 @@
       url('../font/august/August-Script-Bold-free.ttf.svg#August-Script-Bold-free') format('svg'),
       url('../font/august/August-Script-Bold-free.ttf.eot'),
       url('../font/august/August-Script-Bold-free.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'condensed';
+  src:
+      url('../font/condensed/CorpSansRdAlt-LightCnd.woff') format('woff'),
+      url('../font/condensed/CorpSansRdAlt-LightCnd.ttf');
   font-weight: normal;
   font-style: normal;
 }
