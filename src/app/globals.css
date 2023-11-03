@@ -55,3 +55,7 @@
     color: var(--light-green);
     text-align: center;
 }
+
+.condensed {
+    font-family: 'condensed';
+}

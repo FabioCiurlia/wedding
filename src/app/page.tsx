@@ -7,15 +7,19 @@ import ConfirmForm from "./components/ConfirmForm";
 
 export default function Home() {
   return (
-    <div className="paper-back">
-      <div className="hero" style={{ height: "100vh" }}>
+    <section className="">
+      <div className="paper-back hero">
         <div className="hero-body">
           <div className="container">
 			<Celebration/>
-			<ConfirmForm/>
+			<div className="columns is-centered">
+        		<div className="column is-half">
+					<ConfirmForm/>
+				</div>
+			</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
