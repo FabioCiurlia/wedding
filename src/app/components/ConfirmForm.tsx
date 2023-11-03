@@ -1,7 +1,7 @@
 export default function ConfirmForm() {
   return (
     <>
-      <form name="confirm" method="POST" data-netlify="true">
+      <form name="confirm-invite" data-netlify="true">
         <p>
           <label>
             Your Name: <input type="text" name="name" />
