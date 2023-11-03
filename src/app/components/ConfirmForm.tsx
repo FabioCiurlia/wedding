@@ -3,7 +3,8 @@ import React from "react";
 export default function ConfirmForm() {
   return (
     <>
-      <form name="confirm-invite" data-netlify="true" method="post" onSubmit="submit">
+      <form name="confirm-invite" data-netlify="true" method="post">
+        <input type="hidden" name="form-name" value="confirm-invite"/>
         <div className="field">
           <label className="label">Nome</label>
           <input className="input" type="text" name="name" placeholder="Nome"/>
