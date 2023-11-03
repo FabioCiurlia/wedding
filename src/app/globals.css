@@ -32,3 +32,26 @@
 .m-auto {
   margin: auto;
 }
+
+.wrapped-border {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    letter-spacing: 2px;
+}
+
+.names-mobile {
+    font-family: "august-script";
+    color: var(--light-green);
+    text-align: center;
+    font-size: 3em;
+}
+
+.names-desktop {
+    font-family: "august-script";
+    font-size: 5em;
+    color: var(--light-green);
+    text-align: center;
+}
