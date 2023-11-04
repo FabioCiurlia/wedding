@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import "../../node_modules/bulma/css/bulma.css";
 
 import Celebration from "./components/Celebration";

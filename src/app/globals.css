@@ -2,6 +2,7 @@
     --white: #f6f6f6;
     --green: #013220;
     --light-green: #0f402e;
+    --gold: #e0c9a1;
 }
 @import url(https://db.onlinewebfonts.com/c/5c173ad9697fc1d8a9ef2de3fbefe3d7?family=Jane+Light+W00+Regular);
 
@@ -25,6 +26,14 @@
   font-style: normal;
 }
 
+.is-green {
+  color: var(--green);
+}
+
+.is-gold {
+  color: var(--gold);
+}
+
 .paper-back {
   background: url('../img/handmadepaper.png');
 }
@@ -36,6 +45,9 @@
 .wrapped-border {
     border-top: 1px solid;
     border-bottom: 1px solid;
+    border-color: var(--gold);
+
+    color: var(--green);
     padding-top: 4px;
     padding-bottom: 4px;
 

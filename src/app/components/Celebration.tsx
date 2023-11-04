@@ -11,7 +11,7 @@ export default function Celebration() {
         <div className="column is-half">
           <div className="my-5">
             <p
-              className="has-text-centered is-size-6"
+              className="has-text-centered is-size-6 is-gold"
               style={{ lineHeight: "normal", letterSpacing: "2px" }}
             >
               ANNUNCIANO CON GIOIA
@@ -28,13 +28,13 @@ export default function Celebration() {
                 <span className="wrapped-border">&#8194;SABATO&#8194;</span>
               </div>
               <div>
-                <span className="is-size-2 is-size-2-touch">16</span>
+                <span className="is-size-2 is-size-2-touch is-green">16</span>
               </div>
               <div>
                 <span className="wrapped-border">DICEMBRE</span>
               </div>
             </div>
-            <div style={{ marginTop: "-8px" }}>2023</div>
+            <div className="is-green" style={{ marginTop: "-8px" }}>2023</div>
           </div>
         </div>
       </div>
