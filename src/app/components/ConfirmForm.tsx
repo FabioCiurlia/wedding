@@ -3,7 +3,10 @@ import React from "react";
 export default function ConfirmForm() {
   return (
     <>
-    <div className="content my-5">
+    <div className="mb-5 has-text-centered">
+      <span className="wrapped-border is-size-5">CONFERMA PARTECIPAZIONE</span>
+    </div>
+    <div className="content my-2 ">
         <p className="has-text-justified">Ti chiediamo cortesemente di compilare le informazioni riguardo la tua partecipazione, specificando <b>Nome</b> e <b>Cognome</b> della famiglia.
         </p>
       </div>

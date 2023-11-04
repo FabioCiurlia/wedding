@@ -34,8 +34,32 @@ export default function Celebration() {
                 <span className="wrapped-border">DICEMBRE</span>
               </div>
             </div>
-            <div className="is-green" style={{ marginTop: "-8px" }}>2023</div>
+            <div className="is-green" style={{ marginTop: "-8px" }}>
+              2023
+            </div>
           </div>
+          {/* Fine Layout Partecipazione */}
+          <div className="my-5">
+            <span
+              className="is-gold is-size-6"
+              style={{ marginBottom: "-4px" }}
+            >
+              ORE 10:30
+            </span>
+            <p
+              className="is-green"
+              style={{ lineHeight: "normal", letterSpacing: "2px" }}
+            >
+              CATTEDRALE MARIA SS. ASSUNTA
+            </p>
+            <span className="is-gold is-size-7">
+              <a href="https://maps.app.goo.gl/KgiAzC4RsV8YC3DDA">
+                P.ZZA DEL DUOMO - LECCE
+              </a>
+            </span>
+          </div>
+
+
         </div>
       </div>
     </section>

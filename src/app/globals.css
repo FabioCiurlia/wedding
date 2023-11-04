@@ -2,7 +2,7 @@
     --white: #f6f6f6;
     --green: #013220;
     --light-green: #0f402e;
-    --gold: #e0c9a1;
+    --gold: #baa582;
 }
 @import url(https://db.onlinewebfonts.com/c/5c173ad9697fc1d8a9ef2de3fbefe3d7?family=Jane+Light+W00+Regular);
 
@@ -70,4 +70,21 @@
 
 .condensed {
     font-family: 'condensed';
+}
+
+.content.is-vcentered {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; /* used this for multiple child */
+  /* align-items: center; /* if an only child */
+}
+
+
+span.is-gold > a {
+  color: var(--gold)!important;
+  text-decoration: underline;
+}
+
+.is-flex > .flex-item {
+  flex: 50%;
 }
