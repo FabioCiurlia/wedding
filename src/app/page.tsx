@@ -41,7 +41,7 @@ export default function Home() {
           </div>
       </section>
       <section className="hero is-fullheight paper-back" id="conferma-partecipazione">
-        <div className="hero-body pt-0">
+        <div className="hero-body">
           <div className="columns is-centered">
             <div className="column is-half">
               <ConfirmForm />
