@@ -96,3 +96,14 @@ span.is-gold > a {
 .column.is-half{
     max-width: 514px;
 }
+
+.logo{
+    width: 425px;
+}
+
+@media screen and (max-width: 425px) {
+    .logo{
+        width: 82vw;
+        min-width: 260px;
+    }
+}
