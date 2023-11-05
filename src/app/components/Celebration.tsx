@@ -7,7 +7,7 @@ export default function Celebration() {
 
       <h1 className="is-hidden-desktop names-mobile">Andrea e Roberta</h1>
 
-      <div className="columns is-centered">
+      <div className="columns is-centered is-flex">
         <div className="column is-half">
           <div className="my-5">
             <p

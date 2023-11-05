@@ -88,3 +88,11 @@ span.is-gold > a {
 .is-flex > .flex-item {
   flex: 50%;
 }
+
+.columns.is-centered{
+    flex-grow: 1;
+}
+
+.column.is-half{
+    max-width: 514px;
+}
