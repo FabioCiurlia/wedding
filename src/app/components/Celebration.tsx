@@ -4,7 +4,7 @@ export default function Celebration() {
   return (
     <section>
 
-      <embed src="andrea_roberta.svg" className={"logo"} />
+      <embed src="andrea_roberta.svg" className="logo"/>
 
       <div className="columns is-centered is-flex">
         <div className="column is-half">
