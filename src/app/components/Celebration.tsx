@@ -3,11 +3,10 @@ import "../../../node_modules/bulma/css/bulma.css";
 export default function Celebration() {
   return (
     <section>
-      <h1 className="is-hidden-mobile names-desktop">Andrea e Roberta</h1>
 
-      <h1 className="is-hidden-desktop names-mobile">Andrea e Roberta</h1>
+      <embed src="andrea_roberta.svg" className={"logo"} />
 
-      <div className="columns is-centered">
+      <div className="columns is-centered is-flex">
         <div className="column is-half">
           <div className="my-5">
             <p
@@ -65,3 +64,4 @@ export default function Celebration() {
     </section>
   );
 }
+
