@@ -6,7 +6,7 @@ export default function Hotel() {
             </div>
             <div className="content">
                 <p className="has-text-justified">
-                    A vostra completa disposizione, l’<b><span className="is-gold"><a className="">Hotel Glasshouse</a></span></b> ospiterà, con nostro immenso piacere, 
+                    A vostra completa disposizione, l’<b><span className="is-gold"><a>Hotel Glasshouse</a></span></b> ospiterà, con nostro immenso piacere, 
                     gli ospiti che ci raggiungeranno dalle parti più disparate della penisola e che desidereranno soggiornare a Lecce il giorno del nostro matrimonio. 
                 </p>    
                 <p className="has-text-justified">La struttura vi accoglierà a partire da Venerdì 15 dicembre fino a Domenica 17 dicembre, 
