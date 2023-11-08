@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 
 export default function ConfirmForm() {
 
-  const refPartecipazione = useRef()
+  const refPartecipazione = useRef<HTMLInputElement>(null);
   const [accept, setAccept] = useState(false)
   const [noAccept, setNoAccept] = useState(false)
 
@@ -18,7 +18,8 @@ export default function ConfirmForm() {
     }
 
     if (refPartecipazione != undefined) {
-      refPartecipazione.current.value = answer
+      const inputPartecipazione = refPartecipazione.current as HTMLInputElement;
+      inputPartecipazione.value = answer
     }
     event.preventDefault();
   }
