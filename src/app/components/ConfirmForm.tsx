@@ -23,7 +23,7 @@ export default function ConfirmForm() {
   function updateInput(answer: string) {
     var inputPartecipazione = document.querySelector('input[name="partecipazione"]') as HTMLInputElement;
     if (inputPartecipazione) {
-      inputPartecipazione.value = answer;
+      inputPartecipazione.setAttribute('value', answer);
     }
   }
 
