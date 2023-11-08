@@ -51,8 +51,8 @@ export default function ConfirmForm() {
 
           <input type="hidden" name="partecipazione" value=""/>
           <div className="buttons has-addons">
-            <button className={`button ${accept ? "is-selected is-success" : ""}`} onClick={ () => toggleAccept('Si')}>Yes</button>
-            <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} onClick={ () => toggleAccept('No')}>No</button>
+            <button className={`button ${accept ? "is-selected is-success" : ""}`} onClick={ () => toggleAccept('Si', event) }>Yes</button>
+            <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} onClick={ () => toggleAccept('No', event) }>No</button>
           </div>
         </div>
 
