@@ -37,7 +37,7 @@ export default function ConfirmForm() {
         </p>
       </div>
       <form name="invite-confermation" data-netlify="true" method="post">
-        <input type="hidden" name="form-name" value="confirm-invite"/>
+        <input type="hidden" name="form-name" value="invite-confermation"/>
         <div className="field">
           <label className="label">Nome</label>
           <input className="input" type="text" name="name" placeholder="es. Andrea"/>
