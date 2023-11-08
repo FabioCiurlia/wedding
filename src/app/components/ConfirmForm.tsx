@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function ConfirmForm() {
+
+  const [accept, setAccept] = useState(false)
+  const [noAccept, setNoAccept] = useState(false)
+
+  function toggleAccept(answer: string) {
+    console.log(answer)
+    if (answer == "Si") {
+      setAccept(true);
+      setNoAccept(false);
+    } else {
+      setNoAccept(true);
+      setAccept(false);
+    }
+
+    updateInput(answer);
+  }
+
+  function updateInput(answer: string) {
+    var inputPartecipazione = document.querySelector('input[name="partecipazione"]');
+    if (inputPartecipazione) {
+      inputPartecipazione.value = answer;
+      console.log(inputPartecipazione.value)
+    }
+  }
+
   return (
     <>
     <div className="mb-5 has-text-centered">
@@ -24,22 +49,20 @@ export default function ConfirmForm() {
         <div className="columns">
           <div className="column is-6">
           <label className="label">Parteciperai?</label>
-          <label className="checkbox">
-            <input type="checkbox" name="partecipazione" value="Si"/>
-          </label>
-          <span className="mx-1">Si</span>
 
-          <label className="checkbox">
-            <input type="checkbox" name="partecipazione" value="No"/>
-          </label>
-          <span className="mx-1">No</span>
+          <input type="hidden" name="partecipazione" value=""/>
+          <div className="buttons has-addons">
+            <button className={`button ${accept ? "is-selected is-success" : ""}`} onClick={ () => toggleAccept('Si')}>Yes</button>
+            <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} onClick={ () => toggleAccept('No')}>No</button>
+          </div>
         </div>
 
-        <div className="column is-6">
-
+        <div className="column">
           <div className="field">
           <label className="label">Quanti sarete?</label>
           <input className="input" type="number" name="numero" placeholder="es. 2"/>
+
+          
         </div>
           </div>
           
