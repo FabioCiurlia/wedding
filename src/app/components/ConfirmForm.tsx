@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 export default function ConfirmForm() {
 
+  const refPartecipazione = useRef()
   const [accept, setAccept] = useState(false)
   const [noAccept, setNoAccept] = useState(false)
 
@@ -16,15 +17,10 @@ export default function ConfirmForm() {
       setAccept(false);
     }
 
-    updateInput(answer);
-    event.preventDefault();
-  }
-
-  function updateInput(answer: string) {
-    var inputPartecipazione = document.querySelector('input[name="partecipazione"]') as HTMLInputElement;
-    if (inputPartecipazione) {
-      inputPartecipazione.setAttribute('value', answer);
+    if (refPartecipazione != undefined) {
+      refPartecipazione.current.value = answer
     }
+    event.preventDefault();
   }
 
   return (
@@ -51,7 +47,7 @@ export default function ConfirmForm() {
           <div className="column is-6">
           <label className="label">Parteciperai?</label>
 
-          <input type="hidden" name="partecipazione" value=""/>
+          <input type="hidden" name="partecipazione" ref={refPartecipazione}/>
           <div className="buttons has-addons">
             <button className={`button ${accept ? "is-selected is-success" : ""}`} data-answer="Si" onClick={toggleAccept}>Yes</button>
             <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} data-answer="No" onClick={toggleAccept}>No</button>
