@@ -5,8 +5,7 @@ export default function ConfirmForm() {
   const [accept, setAccept] = useState(false)
   const [noAccept, setNoAccept] = useState(false)
 
-  function toggleAccept(answer: string) {
-    console.log(answer)
+  function toggleAccept(answer: string, event: Event) {
     if (answer == "Si") {
       setAccept(true);
       setNoAccept(false);
@@ -16,13 +15,13 @@ export default function ConfirmForm() {
     }
 
     updateInput(answer);
+    event.preventDefault();
   }
 
   function updateInput(answer: string) {
     var inputPartecipazione = document.querySelector('input[name="partecipazione"]') as HTMLInputElement;
     if (inputPartecipazione) {
       inputPartecipazione.value = answer;
-      console.log(inputPartecipazione.value)
     }
   }
 
