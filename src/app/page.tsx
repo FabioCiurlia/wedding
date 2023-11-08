@@ -46,6 +46,8 @@ const Home = () => {
   return (
     <>
       <section className="hero is-fullheight paper-back">
+        <div className="decoration-back absolute is-mobile is-hidden-desktop"></div>
+        <div className="decoration-back absolute is-hidden-touch"></div>
         <div className="hero-body has-text-centered">
           <div className="container">
             <Celebration />
@@ -97,8 +99,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        className="hero is-fullheight paper-back"
-        id="conferma-partecipazione">
+        className="hero is-fullheight paper-back" id="conferma-partecipazione">
         <div className="hero-body">
           <div className="columns is-centered">
             <div className="column is-half">

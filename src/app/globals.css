@@ -38,6 +38,42 @@
   background: url('../img/handmadepaper.png');
 }
 
+
+.decoration-back {
+  background-image: url('../img/ghirigori.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.end-back {
+  background-image: url('../img/end.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.absolute-bot {
+  position: absolute;
+  bottom: 0px;
+  scale: 1.0;
+  opacity: 0.2;
+  height: 100vh;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  scale: 1.0;
+  opacity: 0.2;
+}
+
+
+.absolute.is-mobile {
+  top: -220px;
+}
+
 .m-auto {
   margin: auto;
 }
