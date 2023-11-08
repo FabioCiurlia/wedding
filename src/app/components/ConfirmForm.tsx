@@ -5,7 +5,9 @@ export default function ConfirmForm() {
   const [accept, setAccept] = useState(false)
   const [noAccept, setNoAccept] = useState(false)
 
-  function toggleAccept(answer: string, event: Event) {
+  function toggleAccept(event: any) {
+    var answer = event.target.getAttribute('data-answer');
+
     if (answer == "Si") {
       setAccept(true);
       setNoAccept(false);
@@ -51,8 +53,8 @@ export default function ConfirmForm() {
 
           <input type="hidden" name="partecipazione" value=""/>
           <div className="buttons has-addons">
-            <button className={`button ${accept ? "is-selected is-success" : ""}`} onClick={ () => toggleAccept('Si', event) }>Yes</button>
-            <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} onClick={ () => toggleAccept('No', event) }>No</button>
+            <button className={`button ${accept ? "is-selected is-success" : ""}`} data-answer="Si" onClick={toggleAccept}>Yes</button>
+            <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} data-answer="No" onClick={toggleAccept}>No</button>
           </div>
         </div>
 
