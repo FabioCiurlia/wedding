@@ -36,7 +36,7 @@ export default function ConfirmForm() {
         <p className="has-text-justified">Ti chiediamo cortesemente di compilare le informazioni riguardo la tua partecipazione, specificando <b>Nome</b> e <b>Cognome</b> della famiglia.
         </p>
       </div>
-      <form name="confirm-invite" data-netlify="true" method="post">
+      <form name="invite-confermation" data-netlify="true" method="post">
         <input type="hidden" name="form-name" value="confirm-invite"/>
         <div className="field">
           <label className="label">Nome</label>
