@@ -50,7 +50,7 @@ export default function ConfirmForm() {
 
           <input type="hidden" name="partecipazione" ref={refPartecipazione}/>
           <div className="buttons has-addons">
-            <button className={`button ${accept ? "is-selected is-success" : ""}`} data-answer="Si" onClick={toggleAccept}>Yes</button>
+            <button className={`button ${accept ? "is-selected is-success" : ""}`} data-answer="Si" onClick={toggleAccept}>Si</button>
             <button className={`button ${noAccept ? "is-selected is-warning" : ""}`} data-answer="No" onClick={toggleAccept}>No</button>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function ConfirmForm() {
         </div>
 
         <p className="has-text-centered">
-          <button className="button" type="submit">Conferma</button>
+          <button className="button is-outlined is-fullwidth" type="submit">Conferma</button>
         </p>
       </form>
     </>

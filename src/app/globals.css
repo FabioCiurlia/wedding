@@ -49,14 +49,20 @@
   background-image: url('../img/end.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.2;
 }
 
 .absolute-bot {
   position: absolute;
   bottom: 0px;
   scale: 1.0;
-  opacity: 0.2;
-  height: 100vh;
 }
 
 .absolute {
@@ -142,4 +148,23 @@ span.is-gold > a {
         width: 82vw;
         min-width: 260px;
     }
+}
+
+.bold-spaced-text {
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.spaced-text {
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.custom-font {
+  font-family: 'august-script';
+}
+
+.is-transparent {
+  background: transparent!important;
 }

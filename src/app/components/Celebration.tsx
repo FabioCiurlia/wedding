@@ -8,7 +8,7 @@ export default function Celebration() {
         <div className="column is-half">
           <div className="my-5">
             <p
-              className="has-text-centered is-size-6 is-gold"
+              className="has-text-centered is-size-6 is-gold bold-spaced-text"
               style={{ lineHeight: "normal", letterSpacing: "2px" }}
             >
               ANNUNCIANO CON GIOIA
@@ -44,7 +44,7 @@ export default function Celebration() {
               ORE 10:30
             </span>
             <p
-              className="is-green is-size-4-desktop"
+              className="is-green is-size-4-desktop bold-spaced-text"
               style={{ lineHeight: "normal", letterSpacing: "2px" }}
             >
               CATTEDRALE MARIA SS. ASSUNTA
