@@ -54,14 +54,19 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-foot has-text-centered">
-          <div className="is-flex is-flex-wrap-wrap my-5 ">
-            <div className="flex-item py-2 mx-4">
+          <div className="columns is-centered">
+            <div className="column is-half">
+            <div className="my-5 ">
+            <div className="py-2 mx-4">
               <a className="button is-outlined is-rounded is-transparent is-fullwidth" href="#info-cerimonia">Indicazioni Stradali e Parcheggi</a>
             </div>
-            <div className="flex-item py-2 mx-4">
+            <div className="py-2 mx-4">
                 <a className="button is-outlined is-rounded is-transparent is-fullwidth" href="#conferma-partecipazione">Conferma Partecipazione</a>
             </div>
           </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <section className="hero is-fullheight paper-back" id="info-cerimonia">
@@ -94,9 +99,11 @@ const Home = () => {
         </div>
       </section>
       <section className="hero is-fullheight paper-back" style={{ position: 'relative'}}>
-        <div className="end-back"></div>
-        <div className="hero-body has-text-centered">
-          <div className="container">
+        <div className="end-back is-hidden-touch"></div>
+        <div className="end-back is-hidden-desktop" style={{backgroundPosition: 'bottom'}}></div>
+        <div className="hero-body has-text-centered" style={{zIndex: 1}}>
+        <div className="columns is-centered">
+            <div className="column is-half">
             <p className="is-size-6 is-size-5-desktop has-text-centered is-gold" style={{ lineHeight: "normal", letterSpacing: "2px" }}>GRADITA CONFERMA ENTRO IL 16 NOVEMBRE</p>
             <div className="my-3">
               <div className="my-2">
@@ -108,10 +115,12 @@ const Home = () => {
                 <p className="bold-spaced-text is-gold is-size-7">VIA RUFFANO, 1 - TAURISANO (LE)</p>
               </div>
             </div>
-            <div className="my-5">
-              <p className="is-size-7 bold-spaced-text">IBAN<br/>IT80I0347501605CC0012296592</p>
+            <div className="my-6 content">
+              <p className="is-size-6" >La vostra presenza e il vostro affetto saranno per noi il dono più bello.
+              <br/>Infiniti sono ancora i nostri sogni e se, desidererete contribuire insieme a noi alla loro realizzazione, potrete farlo attraverso le seguenti coordinate bancarie: <br/>IT80I0347501605CC0012296592</p>
             </div>
             <h1 className="custom-font is-size-1">Grazie</h1>
+          </div>
           </div>
         </div>
       </section>

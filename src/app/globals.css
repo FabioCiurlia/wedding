@@ -43,6 +43,11 @@
   background-image: url('../img/ghirigori.svg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .end-back {
@@ -54,9 +59,14 @@
     bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
     min-height: 100vh;
-    opacity: 0.2;
+    opacity: 0.3;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
+    z-index: 0;
 }
 
 .absolute-bot {
@@ -72,7 +82,7 @@
   left: 0;
   right: 0;
   scale: 1.0;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 
@@ -167,4 +177,18 @@ span.is-gold > a {
 
 .is-transparent {
   background: transparent!important;
+}
+
+@-webkit-keyframes fadeIn { 
+  0% { opacity: 0; }
+  25% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.3; }
 }

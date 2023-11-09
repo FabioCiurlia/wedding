@@ -36,7 +36,7 @@ export default function Celebration() {
             </div>
           </div>
           {/* Fine Layout Partecipazione */}
-          <div className="my-5">
+          <div className="my-6">
             <span
               className="is-gold is-size-5-desktop is-size-6"
               style={{ marginBottom: "-4px" }}
@@ -55,8 +55,6 @@ export default function Celebration() {
               </a>
             </span>
           </div>
-
-
         </div>
       </div>
     </section>
